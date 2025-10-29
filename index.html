@@ -1,49 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alex Sisson - Portfolio</title>
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&family=Lato&display=swap" rel="stylesheet">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="styles/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AS Portfolio – Web Developer specializing in interactive, dynamic web projects.">
+  <title>AS Portfolio</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&family=Lato&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <img src="images/logo.jpg" alt="Alex Sisson Logo" class="logo">
-        <h1>Alex Sisson - Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="site-plan.html">Site Plan</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section id="intro">
-            <h2>Welcome!</h2>
-            <p>Hi, I'm Alex, a web developer passionate about creating interactive web experiences. Explore my portfolio to see projects, skills, and experiences in web development.</p>
-        </section>
+  <header class="site-header">
+    <div class="container header-row">
+      <h1 class="logo">AS</h1>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="site-plan.html">Site Plan</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-        <section id="featured-projects">
-            <h2>Featured Projects</h2>
-            <p>Check out some of my highlighted projects with live demos and descriptions.</p>
-        </section>
+  <section class="hero section">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h1>Hi, I’m Alex, a web developer.</h1>
+        <p>I build interactive, responsive websites with clean design and strong functionality. Explore my work below!</p>
+        <a href="projects.html" class="btn btn-primary">View My Work</a>
+      </div>
+      <div class="hero-art center">
+        <img src="images/profile.png" alt="Profile Picture" class="profile-pic">
+      </div>
+    </div>
+  </section>
 
-        <section id="site-plan-link">
-            <h2>Site Plan</h2>
-            <p>View the detailed site plan for my portfolio: <a href="site-plan.html">Click here</a></p>
-        </section>
-    </main>
+  <section class="section tint-gray section-framed">
+    <div class="container center">
+      <h2 class="section-title">About Me</h2>
+      <div class="underline"></div>
+      <p class="lead">
+        My name is <strong>Alex Sisson</strong>, and I’m a passionate web developer with a love for building interactive, meaningful online experiences. 
+        I enjoy combining creativity with logic to design and code websites that are not only functional but enjoyable to use.
+        I’m currently studying at BYU–Idaho, where I’m expanding my skills in HTML, CSS, JavaScript, and design principles. 
+        My goal is to create clean, accessible, and dynamic sites that make a difference.
+      </p>
+    </div>
+  </section>
 
-    <footer>
-        <p>© 2025 Alex Sisson - Personal Portfolio</p>
-    </footer>
+  <section class="section section-framed tint-sand">
+    <div class="container">
+      <h2 class="section-title">What I Do</h2>
+      <div class="underline"></div>
+      <p class="lead">I design and develop modern websites with a focus on accessibility, user experience, and performance.</p>
+
+      <div class="cards services-grid">
+        <div class="card">
+          <img src="images/web.png" alt="Web Design">
+          <div class="card-body">
+            <h3>Web Design</h3>
+            <p>Crafting clean, modern layouts that balance beauty and functionality.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/webdev.png" alt="Web Development">
+          <div class="card-body">
+            <h3>Web Development</h3>
+            <p>Writing efficient, semantic HTML, CSS, and JavaScript for interactive web experiences.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/ui.png" alt="UI/UX Optimization">
+          <div class="card-body">
+            <h3>UI / UX Optimization</h3>
+            <p>Designing intuitive interfaces that are responsive and easy to navigate.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section tint-gray">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="underline"></div>
+      <div id="project-gallery" class="cards portfolio-grid"></div>
+      <div class="center" style="margin-top:1.5rem;">
+        <a href="projects.html" class="btn btn-outline">See All Projects</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section section-framed">
+    <div class="container center">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="underline"></div>
+      <p class="lead">Interested in working together or learning more about my projects? Send me a message!</p>
+
+      <form id="contactForm" class="contact-form">
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="field full">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <div class="field full center">
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <p id="formMessage" class="form-message"></p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>© 2025 Alex Sisson</p>
+  </footer>
+
+  <div class="viewer hidden">
+    <div class="viewer-content">
+      <span class="close-viewer">&times;</span>
+      <img src="" alt="Viewer Image">
+      <div class="viewer-caption"></div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
 </body>
 </html>

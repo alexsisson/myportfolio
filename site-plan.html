@@ -1,117 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio - Site Plan</title>
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&family=Lato&display=swap" rel="stylesheet">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="styles/site-plan.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AS Portfolio | Site Plan</title>
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/site-plan.css" />
 </head>
 <body>
-    <header>
-        <img src="images/logo.jpg" alt="My Portfolio Logo" class="logo">
-        <h1>My Portfolio - Site Plan</h1>
+
+  <header class="site-header">
+    <div class="container header-row">
+      <h1 class="logo">AS</h1>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="site-plan.html" class="active">Site Plan</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <header class="plan-header center">
+      <h1>AS Portfolio - Site Plan</h1>
+      <p class="subtitle">By Alex Sisson</p>
     </header>
 
-    <main>
-        <section id="purpose-audience">
-            <h2>Purpose and Audience</h2>
-            <p>The purpose of this site is to showcase my personal projects, skills, and experiences in web development.</p>
-            <p>The intended audience includes potential employers, collaborators, and anyone interested in learning about my work. The site provides an interactive portfolio experience highlighting my coding abilities.</p>
-        </section>
+    <section>
+      <h2>Purpose and Audience</h2>
+      <p>
+        The purpose of this site is to showcase my personal projects, skills, and experiences in web development.
+        It provides an interactive portfolio experience highlighting my coding abilities and creativity.
+      </p>
+      <p>
+        The intended audience includes potential employers, collaborators, instructors, and anyone interested in learning about my work as a developer.
+      </p>
+    </section>
 
-        <hr>
+    <section>
+      <h2>Dynamic Elements</h2>
+      <ul>
+        <li>Interactive project gallery where clicking thumbnails opens a detailed viewer.</li>
+        <li>Contact form with input validation before submission.</li>
+        <li>Conditional messages for project statuses (in progress or completed).</li>
+        <li>Use of arrays and objects to store and display project data dynamically.</li>
+      </ul>
+    </section>
 
-        <section id="dynamic-elements">
-            <h2>Dynamic Elements</h2>
-            <ul>
-                <li>Interactive project gallery where clicking thumbnails shows details.</li>
-                <li>Contact form with input validation before submission.</li>
-                <li>Conditional messages for project statuses (in-progress or completed).</li>
-                <li>Use of arrays and objects to store and display project data dynamically.</li>
-            </ul>
-        </section>
+    <section>
+      <h2>Logo</h2>
+      <p><strong>Logo:</strong> Simple text-based design using the initials <strong>"AS"</strong> created with Canva. It represents my personal brand and appears in the navigation bar on every page.</p>
+      <div class="logo-sample">AS</div>
+    </section>
 
-        <hr>
+    <section>
+      <h2>Colors and Fonts</h2>
+      <table>
+        <tr><th>Color Name</th><th>Preview</th><th>Hex</th></tr>
+        <tr><td>Primary</td><td class="color-box" style="background:#396e94;"></td><td>#396e94</td></tr>
+        <tr><td>Secondary</td><td class="color-box" style="background:#e7c24f;"></td><td>#e7c24f</td></tr>
+        <tr><td>Accent 1</td><td class="color-box" style="background:#a42212;"></td><td>#a42212</td></tr>
+        <tr><td>Accent 2</td><td class="color-box" style="background:#ffffff;border:1px solid #ddd;"></td><td>#ffffff</td></tr>
+      </table>
 
-        <section id="logo">
-            <h2>Logo</h2>
-            <p>Logo: Simple design with initials "AS" created using Canva.</p>
-            <img src="images/logo.jpg" alt="Logo" class="logo-preview">
-        </section>
+      <p><strong>Heading Font:</strong> IM Fell French Canon SC</p>
+      <p><strong>Paragraph Font:</strong> Lato</p>
+    </section>
 
-        <hr>
+    <section>
+      <h2>Content</h2>
+      <h3>Home Page</h3>
+      <ul>
+        <li>Introduction: “Hi, I'm Alex, a web developer passionate about creating interactive web experiences.”</li>
+        <li>About Me section describing my background and passion for web design.</li>
+        <li>What I Do section showing my key strengths (Web Design, Development, UX).</li>
+        <li>Featured Projects grid with images, descriptions, and status labels.</li>
+        <li>Contact Form for visitors to send messages.</li>
+      </ul>
 
-        <section id="colors-fonts">
-            <h2>Colors and Fonts</h2>
-            <table class="colors">
-                <tr>
-                    <th>Color Name</th>
-                    <th>Preview</th>
-                    <th>Hex</th>
-                </tr>
-                <tr>
-                    <td>Primary</td>
-                    <td class="primary"></td>
-                    <td>#396e94</td>
-                </tr>
-                <tr>
-                    <td>Secondary</td>
-                    <td class="secondary"></td>
-                    <td>#e7c24f</td>
-                </tr>
-                <tr>
-                    <td>Accent1</td>
-                    <td class="accent1"></td>
-                    <td>#a42212</td>
-                </tr>
-                <tr>
-                    <td>Accent2</td>
-                    <td class="accent2"></td>
-                    <td>white</td>
-                </tr>
-            </table>
-            <p>Heading Font: IM Fell French Canon SC</p>
-            <p>Paragraph Font: Lato</p>
-        </section>
+      <h3>Child Page (Projects)</h3>
+      <ul>
+        <li>Displays detailed project descriptions, screenshots, and technologies used.</li>
+        <li>Filter and search options to sort projects by technology or completion status.</li>
+        <li>Clickable images that open in a pop-up viewer.</li>
+      </ul>
 
-        <hr>
+      <h3>Contact Section</h3>
+      <ul>
+        <li>Simple form requesting name, email, and message.</li>
+        <li>Validation ensures fields are completed before submission.</li>
+      </ul>
+    </section>
 
-        <section id="content">
-            <h2>Content</h2>
-            <h3>Home Page</h3>
-            <p>Introduction: "Hi, I'm Alex, a web developer passionate about creating interactive web experiences."</p>
-            <p>Featured projects with images and short descriptions.</p>
+    <section>
+      <h2>Wireframes</h2>
+      <p>The following describes the visual layout of each main page.</p>
+      <h3>Home Page</h3>
+      <p>Header (Logo + Nav) → Hero Section → About Me → What I Do → Featured Projects → Contact → Footer</p>
+      <img src="images/main.png" alt="main Wireframes">
+      <h3>Child Page (Projects)</h3>
+      <p>Header (Logo + Nav) → Filter/Search Controls → Project Grid → Footer</p>
+      <img src="images/sub.png" alt="Child">
+    </section>
+  </main>
 
-            <h3>Child Page (Projects)</h3>
-            <p>Detailed project descriptions, screenshots, and links to live demos.</p>
-            <p>Filterable by technology used.</p>
-
-            <h3>Contact Section</h3>
-            <p>Simple form asking for name, email, and message.</p>
-        </section>
-        
-        
-        <section id="wireframes">
-            <h2>Wireframes</h2>
-            <div class="sitemap">
-                <div class="sm-home">Home Page</div>
-                <div class="sm-page2">Child Page 1</div>
-                <div class="sm-page3">Child Page 2</div>
-            </div>
-            <p>Main wireframes</p>
-            <img src="images/main.png" alt="Home Page Wireframe">
-            <p>Sub wireframes</p>
-            <img src="images/sub.png" alt="Child Page Wireframe">
-        </section>
-    </main>
-
-    <footer>
-        <p>© 2025 Alex Sisson - Personal Portfolio Site Plan</p>
-    </footer>
+  <footer>
+    <p>© 2025 Alex Sisson | AS Portfolio Site Plan</p>
+  </footer>
 </body>
 </html>

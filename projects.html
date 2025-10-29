@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="All web development projects by Alex Sisson.">
+  <title>AS Portfolio | Projects</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container header-row">
+      <h1 class="logo">AS</h1>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="site-plan.html">Site Plan</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section tint-gray">
+    <div class="container">
+      <h2 class="section-title">All Projects</h2>
+      <div class="underline"></div>
+      <p class="lead">Explore my complete collection of web projects from responsive designs to dynamic JavaScript applications.</p>
+
+      <div class="center" style="margin-bottom: 1.5rem;">
+        <label for="techFilter"><strong>Filter by Tech:</strong></label>
+        <select id="techFilter">
+          <option value="all">All</option>
+        </select>
+
+        <label for="statusFilter"><strong>Status:</strong></label>
+        <select id="statusFilter">
+          <option value="all">All</option>
+          <option value="Completed">Completed</option>
+          <option value="In Progress">In Progress</option>
+        </select>
+
+        <input type="text" id="searchInput" placeholder="Search projects..." style="padding:.5rem;border:1px solid #ccc;border-radius:6px;margin-left:.5rem;">
+      </div>
+
+      <div id="all-projects" class="cards portfolio-grid"></div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>© 2025 Alex Sisson | Explore my latest web projects</p>
+  </footer>
+
+  <div class="viewer hidden">
+    <div class="viewer-content">
+      <span class="close-viewer">&times;</span>
+      <img src="" alt="Viewer Image">
+      <div class="viewer-caption"></div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
